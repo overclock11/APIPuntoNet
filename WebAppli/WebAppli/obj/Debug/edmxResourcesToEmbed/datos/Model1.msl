@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="rutaModelStoreContainer" CdmEntityContainer="rutaEntities">
+    <EntitySetMapping Name="prueba1">
+      <EntityTypeMapping TypeName="rutaModel.prueba1">
+        <MappingFragment StoreEntitySet="prueba1">
+          <ScalarProperty Name="prueba1_id" ColumnName="prueba1_id" />
+          <ScalarProperty Name="prueba1_nombre" ColumnName="prueba1_nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="rutaModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+          <ScalarProperty Name="usuario_nombre" ColumnName="usuario_nombre" />
+          <ScalarProperty Name="usuario_login" ColumnName="usuario_login" />
+          <ScalarProperty Name="usuario_pass" ColumnName="usuario_pass" />
+          <ScalarProperty Name="usuario_avatar" ColumnName="usuario_avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

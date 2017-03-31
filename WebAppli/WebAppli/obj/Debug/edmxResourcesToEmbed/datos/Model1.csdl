@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="rutaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="prueba1">
+    <Key>
+      <PropertyRef Name="prueba1_id" />
+    </Key>
+    <Property Name="prueba1_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prueba1_nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usuario_id" />
+    </Key>
+    <Property Name="usuario_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario_nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_login" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_pass" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_avatar" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="rutaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="prueba1" EntityType="Self.prueba1" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" />
+  </EntityContainer>
+</Schema>
