@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\Models\modeloFabrisetas.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\Models\modeloFabrisetas.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

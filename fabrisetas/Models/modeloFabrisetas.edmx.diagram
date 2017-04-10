@@ -10,10 +10,10 @@
         <EntityTypeShape EntityType="fabricetasModel.estampa" Width="1.5" PointX="10.5" PointY="9" IsExpanded="true" />
         <EntityTypeShape EntityType="fabricetasModel.factura" Width="1.5" PointX="12.75" PointY="9.375" IsExpanded="true" />
         <EntityTypeShape EntityType="fabricetasModel.file" Width="1.5" PointX="15.75" PointY="9" IsExpanded="true" />
-        <EntityTypeShape EntityType="fabricetasModel.role" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="fabricetasModel.role" Width="1.5" PointX="0.5" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="fabricetasModel.tema" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
         <EntityTypeShape EntityType="fabricetasModel.texto" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="fabricetasModel.user" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="fabricetasModel.user" Width="1.5" PointX="3.125" PointY="6.25" IsExpanded="true" />
         <AssociationConnector Association="fabricetasModel.USER_ID" ManuallyRouted="false" />
         <AssociationConnector Association="fabricetasModel.CAMISETA_TEXTO_ID" ManuallyRouted="false" />
         <AssociationConnector Association="fabricetasModel.CAMISETA_USER_ID" ManuallyRouted="false" />
