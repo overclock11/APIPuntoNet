@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fabricetasModelStoreContainer" CdmEntityContainer="fabricetasEntities">
+    <EntitySetMapping Name="address">
+      <EntityTypeMapping TypeName="fabricetasModel.address">
+        <MappingFragment StoreEntitySet="address">
+          <ScalarProperty Name="ADDRESS_ID" ColumnName="ADDRESS_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="camiseta">
+      <EntityTypeMapping TypeName="fabricetasModel.camiseta">
+        <MappingFragment StoreEntitySet="camiseta">
+          <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+          <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="URL_CAMISETA" ColumnName="URL_CAMISETA" />
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="TEXTO_ID" ColumnName="TEXTO_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estampa">
+      <EntityTypeMapping TypeName="fabricetasModel.estampa">
+        <MappingFragment StoreEntitySet="estampa">
+          <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="URL_ESTAMPA" ColumnName="URL_ESTAMPA" />
+          <ScalarProperty Name="RATING" ColumnName="RATING" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+          <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="factura">
+      <EntityTypeMapping TypeName="fabricetasModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="FACTURA_ID" ColumnName="FACTURA_ID" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="ITEM_PRICE" ColumnName="ITEM_PRICE" />
+          <ScalarProperty Name="TOTAL_PRICE" ColumnName="TOTAL_PRICE" />
+          <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+          <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+          <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="file">
+      <EntityTypeMapping TypeName="fabricetasModel.file">
+        <MappingFragment StoreEntitySet="file">
+          <ScalarProperty Name="FILE_ID" ColumnName="FILE_ID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PATH" ColumnName="PATH" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+          <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+          <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="fabricetasModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tema">
+      <EntityTypeMapping TypeName="fabricetasModel.tema">
+        <MappingFragment StoreEntitySet="tema">
+          <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="URL_TEMA" ColumnName="URL_TEMA" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="texto">
+      <EntityTypeMapping TypeName="fabricetasModel.texto">
+        <MappingFragment StoreEntitySet="texto">
+          <ScalarProperty Name="TEXTO_ID" ColumnName="TEXTO_ID" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="fabricetasModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="IDENTIFICATION_TYPE" ColumnName="IDENTIFICATION_TYPE" />
+          <ScalarProperty Name="IDENTIFICATION_NUMBER" ColumnName="IDENTIFICATION_NUMBER" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="SSO_ID" ColumnName="SSO_ID" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="r_user_role" TypeName="fabricetasModel.r_user_role" StoreEntitySet="r_user_role">
+      <EndProperty Name="role">
+        <ScalarProperty Name="ROLE_ID" ColumnName="R_ROLE_ID" />
+      </EndProperty>
+      <EndProperty Name="user">
+        <ScalarProperty Name="USER_ID" ColumnName="R_USER_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

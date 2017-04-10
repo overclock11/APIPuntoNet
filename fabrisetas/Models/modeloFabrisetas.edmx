@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="fabricetasModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="ADDRESS_ID" />
+          </Key>
+          <Property Name="ADDRESS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="45" />
+          <Property Name="USER_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="camiseta">
+          <Key>
+            <PropertyRef Name="CAMISETA_ID" />
+          </Key>
+          <Property Name="CAMISETA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MATERIAL" Type="varchar" MaxLength="45" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" />
+          <Property Name="URL_CAMISETA" Type="longblob" />
+          <Property Name="VALOR" Type="varchar" MaxLength="45" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="45" />
+          <Property Name="COLOR" Type="varchar" MaxLength="45" />
+          <Property Name="TEXTO_ID" Type="int" />
+          <Property Name="USER_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="estampa">
+          <Key>
+            <PropertyRef Name="ESTAMPA_ID" />
+          </Key>
+          <Property Name="ESTAMPA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="45" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" />
+          <Property Name="URL_ESTAMPA" Type="longblob" />
+          <Property Name="RATING" Type="varchar" MaxLength="45" />
+          <Property Name="PRECIO" Type="varchar" MaxLength="45" />
+          <Property Name="USER_ID" Type="int" />
+          <Property Name="CAMISETA_ID" Type="int" />
+          <Property Name="TEMA_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="factura">
+          <Key>
+            <PropertyRef Name="FACTURA_ID" />
+          </Key>
+          <Property Name="FACTURA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NUMBER" Type="varchar" MaxLength="45" />
+          <Property Name="DATE" Type="date" />
+          <Property Name="ITEM_PRICE" Type="varchar" MaxLength="45" />
+          <Property Name="TOTAL_PRICE" Type="varchar" MaxLength="45" />
+          <Property Name="CAMISETA_ID" Type="int" />
+          <Property Name="TEMA_ID" Type="int" />
+          <Property Name="ESTAMPA_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="file">
+          <Key>
+            <PropertyRef Name="FILE_ID" />
+          </Key>
+          <Property Name="FILE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CONTENT" Type="longblob" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="150" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" />
+          <Property Name="PATH" Type="varchar" MaxLength="45" />
+          <Property Name="TYPE" Type="varchar" MaxLength="45" />
+          <Property Name="USER_ID" Type="int" />
+          <Property Name="CAMISETA_ID" Type="int" />
+          <Property Name="ESTAMPA_ID" Type="int" />
+          <Property Name="TEMA_ID" Type="int" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'def.fabricetas.r_user_role' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="r_user_role">
+          <Key>
+            <PropertyRef Name="R_USER_ID" />
+            <PropertyRef Name="R_ROLE_ID" />
+          </Key>
+          <Property Name="R_USER_ID" Type="int" Nullable="false" />
+          <Property Name="R_ROLE_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="ROLE_ID" />
+          </Key>
+          <Property Name="ROLE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="tema">
+          <Key>
+            <PropertyRef Name="TEMA_ID" />
+          </Key>
+          <Property Name="TEMA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="45" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" />
+          <Property Name="URL_TEMA" Type="longblob" />
+          <Property Name="USER_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="texto">
+          <Key>
+            <PropertyRef Name="TEXTO_ID" />
+          </Key>
+          <Property Name="TEXTO_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="COLOR" Type="varchar" MaxLength="45" />
+          <Property Name="TITULO" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="45" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="45" />
+          <Property Name="IDENTIFICATION_TYPE" Type="varchar" MaxLength="45" />
+          <Property Name="IDENTIFICATION_NUMBER" Type="varchar" MaxLength="45" />
+          <Property Name="TIPO" Type="varchar" MaxLength="45" />
+          <Property Name="SSO_ID" Type="varchar" MaxLength="45" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="45" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="45" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <Association Name="CAMISETA_TEXTO_ID">
+          <End Role="texto" Type="Self.texto" Multiplicity="0..1" />
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="texto">
+              <PropertyRef Name="TEXTO_ID" />
+            </Principal>
+            <Dependent Role="camiseta">
+              <PropertyRef Name="TEXTO_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CAMISETA_USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="camiseta">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPA_USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPACAMISETA_ID">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPATEMA_ID">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_CAMISETA_ID_FK">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_ESTAMPA_ID_FK">
+          <End Role="estampa" Type="Self.estampa" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estampa">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_TEMA_ID_FK">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_CAMISETA_ID_FK">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_ESTAMPA_ID_FK">
+          <End Role="estampa" Type="Self.estampa" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estampa">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_TEMA_ID_FK">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_USER_ID_FX">
+          <End Role="user" Type="Self.user" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="R_ROLE_ID">
+          <End Role="role" Type="Self.role" Multiplicity="1" />
+          <End Role="r_user_role" Type="Self.r_user_role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="role">
+              <PropertyRef Name="ROLE_ID" />
+            </Principal>
+            <Dependent Role="r_user_role">
+              <PropertyRef Name="R_ROLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="R_USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="r_user_role" Type="Self.r_user_role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="r_user_role">
+              <PropertyRef Name="R_USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TEMA_USER_ID_FK">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="tema" Type="Self.tema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="tema">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="address" Type="Self.address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="fabricetasModelStoreContainer">
+          <EntitySet Name="address" EntityType="Self.address" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="camiseta" EntityType="Self.camiseta" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="estampa" EntityType="Self.estampa" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="factura" EntityType="Self.factura" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="file" EntityType="Self.file" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="role" EntityType="Self.role" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="tema" EntityType="Self.tema" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="texto" EntityType="Self.texto" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="fabricetas" store:Type="Tables" />
+          <EntitySet Name="r_user_role" EntityType="Self.r_user_role" store:Type="Tables" store:Schema="fabricetas">
+            <DefiningQuery>SELECT
+`r_user_role`.`R_USER_ID`, 
+`r_user_role`.`R_ROLE_ID`
+FROM `r_user_role` AS `r_user_role`</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="CAMISETA_TEXTO_ID" Association="Self.CAMISETA_TEXTO_ID">
+            <End Role="texto" EntitySet="texto" />
+            <End Role="camiseta" EntitySet="camiseta" />
+          </AssociationSet>
+          <AssociationSet Name="CAMISETA_USER_ID" Association="Self.CAMISETA_USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="camiseta" EntitySet="camiseta" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPA_USER_ID" Association="Self.ESTAMPA_USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPACAMISETA_ID" Association="Self.ESTAMPACAMISETA_ID">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPATEMA_ID" Association="Self.ESTAMPATEMA_ID">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_CAMISETA_ID_FK" Association="Self.FACTURA_CAMISETA_ID_FK">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_ESTAMPA_ID_FK" Association="Self.FACTURA_ESTAMPA_ID_FK">
+            <End Role="estampa" EntitySet="estampa" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_TEMA_ID_FK" Association="Self.FACTURA_TEMA_ID_FK">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_CAMISETA_ID_FK" Association="Self.FILE_CAMISETA_ID_FK">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_ESTAMPA_ID_FK" Association="Self.FILE_ESTAMPA_ID_FK">
+            <End Role="estampa" EntitySet="estampa" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_TEMA_ID_FK" Association="Self.FILE_TEMA_ID_FK">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_USER_ID_FX" Association="Self.FILE_USER_ID_FX">
+            <End Role="user" EntitySet="user" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="R_ROLE_ID" Association="Self.R_ROLE_ID">
+            <End Role="role" EntitySet="role" />
+            <End Role="r_user_role" EntitySet="r_user_role" />
+          </AssociationSet>
+          <AssociationSet Name="R_USER_ID" Association="Self.R_USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="r_user_role" EntitySet="r_user_role" />
+          </AssociationSet>
+          <AssociationSet Name="TEMA_USER_ID_FK" Association="Self.TEMA_USER_ID_FK">
+            <End Role="user" EntitySet="user" />
+            <End Role="tema" EntitySet="tema" />
+          </AssociationSet>
+          <AssociationSet Name="USER_ID" Association="Self.USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="address" EntitySet="address" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="fabricetasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="ADDRESS_ID" />
+          </Key>
+          <Property Name="ADDRESS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="USER_ID" Type="Int32" />
+          <NavigationProperty Name="user" Relationship="Self.USER_ID" FromRole="address" ToRole="user" />
+        </EntityType>
+        <EntityType Name="camiseta">
+          <Key>
+            <PropertyRef Name="CAMISETA_ID" />
+          </Key>
+          <Property Name="CAMISETA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MATERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="URL_CAMISETA" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="VALOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="COLOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TEXTO_ID" Type="Int32" />
+          <Property Name="USER_ID" Type="Int32" />
+          <NavigationProperty Name="texto" Relationship="Self.CAMISETA_TEXTO_ID" FromRole="camiseta" ToRole="texto" />
+          <NavigationProperty Name="user" Relationship="Self.CAMISETA_USER_ID" FromRole="camiseta" ToRole="user" />
+          <NavigationProperty Name="estampa" Relationship="Self.ESTAMPACAMISETA_ID" FromRole="camiseta" ToRole="estampa" />
+          <NavigationProperty Name="factura" Relationship="Self.FACTURA_CAMISETA_ID_FK" FromRole="camiseta" ToRole="factura" />
+          <NavigationProperty Name="file" Relationship="Self.FILE_CAMISETA_ID_FK" FromRole="camiseta" ToRole="file" />
+        </EntityType>
+        <EntityType Name="estampa">
+          <Key>
+            <PropertyRef Name="ESTAMPA_ID" />
+          </Key>
+          <Property Name="ESTAMPA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="URL_ESTAMPA" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RATING" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="PRECIO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="USER_ID" Type="Int32" />
+          <Property Name="CAMISETA_ID" Type="Int32" />
+          <Property Name="TEMA_ID" Type="Int32" />
+          <NavigationProperty Name="camiseta" Relationship="Self.ESTAMPACAMISETA_ID" FromRole="estampa" ToRole="camiseta" />
+          <NavigationProperty Name="user" Relationship="Self.ESTAMPA_USER_ID" FromRole="estampa" ToRole="user" />
+          <NavigationProperty Name="tema" Relationship="Self.ESTAMPATEMA_ID" FromRole="estampa" ToRole="tema" />
+          <NavigationProperty Name="factura" Relationship="Self.FACTURA_ESTAMPA_ID_FK" FromRole="estampa" ToRole="factura" />
+          <NavigationProperty Name="file" Relationship="Self.FILE_ESTAMPA_ID_FK" FromRole="estampa" ToRole="file" />
+        </EntityType>
+        <EntityType Name="factura">
+          <Key>
+            <PropertyRef Name="FACTURA_ID" />
+          </Key>
+          <Property Name="FACTURA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NUMBER" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" />
+          <Property Name="ITEM_PRICE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL_PRICE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="CAMISETA_ID" Type="Int32" />
+          <Property Name="TEMA_ID" Type="Int32" />
+          <Property Name="ESTAMPA_ID" Type="Int32" />
+          <NavigationProperty Name="camiseta" Relationship="Self.FACTURA_CAMISETA_ID_FK" FromRole="factura" ToRole="camiseta" />
+          <NavigationProperty Name="estampa" Relationship="Self.FACTURA_ESTAMPA_ID_FK" FromRole="factura" ToRole="estampa" />
+          <NavigationProperty Name="tema" Relationship="Self.FACTURA_TEMA_ID_FK" FromRole="factura" ToRole="tema" />
+        </EntityType>
+        <EntityType Name="file">
+          <Key>
+            <PropertyRef Name="FILE_ID" />
+          </Key>
+          <Property Name="FILE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CONTENT" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PATH" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="USER_ID" Type="Int32" />
+          <Property Name="CAMISETA_ID" Type="Int32" />
+          <Property Name="ESTAMPA_ID" Type="Int32" />
+          <Property Name="TEMA_ID" Type="Int32" />
+          <NavigationProperty Name="camiseta" Relationship="Self.FILE_CAMISETA_ID_FK" FromRole="file" ToRole="camiseta" />
+          <NavigationProperty Name="estampa" Relationship="Self.FILE_ESTAMPA_ID_FK" FromRole="file" ToRole="estampa" />
+          <NavigationProperty Name="tema" Relationship="Self.FILE_TEMA_ID_FK" FromRole="file" ToRole="tema" />
+          <NavigationProperty Name="user" Relationship="Self.FILE_USER_ID_FX" FromRole="file" ToRole="user" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="ROLE_ID" />
+          </Key>
+          <Property Name="ROLE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="user" Relationship="Self.r_user_role" FromRole="role" ToRole="user" />
+        </EntityType>
+        <EntityType Name="tema">
+          <Key>
+            <PropertyRef Name="TEMA_ID" />
+          </Key>
+          <Property Name="TEMA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="URL_TEMA" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="USER_ID" Type="Int32" />
+          <NavigationProperty Name="estampa" Relationship="Self.ESTAMPATEMA_ID" FromRole="tema" ToRole="estampa" />
+          <NavigationProperty Name="factura" Relationship="Self.FACTURA_TEMA_ID_FK" FromRole="tema" ToRole="factura" />
+          <NavigationProperty Name="file" Relationship="Self.FILE_TEMA_ID_FK" FromRole="tema" ToRole="file" />
+          <NavigationProperty Name="user" Relationship="Self.TEMA_USER_ID_FK" FromRole="tema" ToRole="user" />
+        </EntityType>
+        <EntityType Name="texto">
+          <Key>
+            <PropertyRef Name="TEXTO_ID" />
+          </Key>
+          <Property Name="TEXTO_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="COLOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TITULO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="camiseta" Relationship="Self.CAMISETA_TEXTO_ID" FromRole="texto" ToRole="camiseta" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="IDENTIFICATION_TYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="IDENTIFICATION_NUMBER" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TIPO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="SSO_ID" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="address" Relationship="Self.USER_ID" FromRole="user" ToRole="address" />
+          <NavigationProperty Name="camiseta" Relationship="Self.CAMISETA_USER_ID" FromRole="user" ToRole="camiseta" />
+          <NavigationProperty Name="estampa" Relationship="Self.ESTAMPA_USER_ID" FromRole="user" ToRole="estampa" />
+          <NavigationProperty Name="file" Relationship="Self.FILE_USER_ID_FX" FromRole="user" ToRole="file" />
+          <NavigationProperty Name="tema" Relationship="Self.TEMA_USER_ID_FK" FromRole="user" ToRole="tema" />
+          <NavigationProperty Name="role" Relationship="Self.r_user_role" FromRole="user" ToRole="role" />
+        </EntityType>
+        <Association Name="USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="address" Type="Self.address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CAMISETA_TEXTO_ID">
+          <End Role="texto" Type="Self.texto" Multiplicity="0..1" />
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="texto">
+              <PropertyRef Name="TEXTO_ID" />
+            </Principal>
+            <Dependent Role="camiseta">
+              <PropertyRef Name="TEXTO_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CAMISETA_USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="camiseta">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPACAMISETA_ID">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_CAMISETA_ID_FK">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_CAMISETA_ID_FK">
+          <End Role="camiseta" Type="Self.camiseta" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="camiseta">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="CAMISETA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPA_USER_ID">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ESTAMPATEMA_ID">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1" />
+          <End Role="estampa" Type="Self.estampa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="estampa">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_ESTAMPA_ID_FK">
+          <End Role="estampa" Type="Self.estampa" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estampa">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_ESTAMPA_ID_FK">
+          <End Role="estampa" Type="Self.estampa" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="estampa">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="ESTAMPA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FACTURA_TEMA_ID_FK">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1" />
+          <End Role="factura" Type="Self.factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="factura">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_TEMA_ID_FK">
+          <End Role="tema" Type="Self.tema" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tema">
+              <PropertyRef Name="TEMA_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="TEMA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FILE_USER_ID_FX">
+          <End Role="user" Type="Self.user" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="file" Type="Self.file" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="file">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TEMA_USER_ID_FK">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="tema" Type="Self.tema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="tema">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="r_user_role">
+          <End Role="role" Type="Self.role" Multiplicity="*" />
+          <End Role="user" Type="Self.user" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="fabricetasEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="address" EntityType="Self.address" />
+          <EntitySet Name="camiseta" EntityType="Self.camiseta" />
+          <EntitySet Name="estampa" EntityType="Self.estampa" />
+          <EntitySet Name="factura" EntityType="Self.factura" />
+          <EntitySet Name="file" EntityType="Self.file" />
+          <EntitySet Name="role" EntityType="Self.role" />
+          <EntitySet Name="tema" EntityType="Self.tema" />
+          <EntitySet Name="texto" EntityType="Self.texto" />
+          <EntitySet Name="user" EntityType="Self.user" />
+          <AssociationSet Name="USER_ID" Association="Self.USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="address" EntitySet="address" />
+          </AssociationSet>
+          <AssociationSet Name="CAMISETA_TEXTO_ID" Association="Self.CAMISETA_TEXTO_ID">
+            <End Role="texto" EntitySet="texto" />
+            <End Role="camiseta" EntitySet="camiseta" />
+          </AssociationSet>
+          <AssociationSet Name="CAMISETA_USER_ID" Association="Self.CAMISETA_USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="camiseta" EntitySet="camiseta" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPACAMISETA_ID" Association="Self.ESTAMPACAMISETA_ID">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_CAMISETA_ID_FK" Association="Self.FACTURA_CAMISETA_ID_FK">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_CAMISETA_ID_FK" Association="Self.FILE_CAMISETA_ID_FK">
+            <End Role="camiseta" EntitySet="camiseta" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPA_USER_ID" Association="Self.ESTAMPA_USER_ID">
+            <End Role="user" EntitySet="user" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="ESTAMPATEMA_ID" Association="Self.ESTAMPATEMA_ID">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="estampa" EntitySet="estampa" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_ESTAMPA_ID_FK" Association="Self.FACTURA_ESTAMPA_ID_FK">
+            <End Role="estampa" EntitySet="estampa" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_ESTAMPA_ID_FK" Association="Self.FILE_ESTAMPA_ID_FK">
+            <End Role="estampa" EntitySet="estampa" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="FACTURA_TEMA_ID_FK" Association="Self.FACTURA_TEMA_ID_FK">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="factura" EntitySet="factura" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_TEMA_ID_FK" Association="Self.FILE_TEMA_ID_FK">
+            <End Role="tema" EntitySet="tema" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="FILE_USER_ID_FX" Association="Self.FILE_USER_ID_FX">
+            <End Role="user" EntitySet="user" />
+            <End Role="file" EntitySet="file" />
+          </AssociationSet>
+          <AssociationSet Name="TEMA_USER_ID_FK" Association="Self.TEMA_USER_ID_FK">
+            <End Role="user" EntitySet="user" />
+            <End Role="tema" EntitySet="tema" />
+          </AssociationSet>
+          <AssociationSet Name="r_user_role" Association="Self.r_user_role">
+            <End Role="role" EntitySet="role" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="fabricetasModelStoreContainer" CdmEntityContainer="fabricetasEntities">
+          <EntitySetMapping Name="address">
+            <EntityTypeMapping TypeName="fabricetasModel.address">
+              <MappingFragment StoreEntitySet="address">
+                <ScalarProperty Name="ADDRESS_ID" ColumnName="ADDRESS_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="camiseta">
+            <EntityTypeMapping TypeName="fabricetasModel.camiseta">
+              <MappingFragment StoreEntitySet="camiseta">
+                <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+                <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL_CAMISETA" ColumnName="URL_CAMISETA" />
+                <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+                <ScalarProperty Name="TEXTO_ID" ColumnName="TEXTO_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="estampa">
+            <EntityTypeMapping TypeName="fabricetasModel.estampa">
+              <MappingFragment StoreEntitySet="estampa">
+                <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL_ESTAMPA" ColumnName="URL_ESTAMPA" />
+                <ScalarProperty Name="RATING" ColumnName="RATING" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+                <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="factura">
+            <EntityTypeMapping TypeName="fabricetasModel.factura">
+              <MappingFragment StoreEntitySet="factura">
+                <ScalarProperty Name="FACTURA_ID" ColumnName="FACTURA_ID" />
+                <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="ITEM_PRICE" ColumnName="ITEM_PRICE" />
+                <ScalarProperty Name="TOTAL_PRICE" ColumnName="TOTAL_PRICE" />
+                <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+                <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+                <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="file">
+            <EntityTypeMapping TypeName="fabricetasModel.file">
+              <MappingFragment StoreEntitySet="file">
+                <ScalarProperty Name="FILE_ID" ColumnName="FILE_ID" />
+                <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PATH" ColumnName="PATH" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="CAMISETA_ID" ColumnName="CAMISETA_ID" />
+                <ScalarProperty Name="ESTAMPA_ID" ColumnName="ESTAMPA_ID" />
+                <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="role">
+            <EntityTypeMapping TypeName="fabricetasModel.role">
+              <MappingFragment StoreEntitySet="role">
+                <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tema">
+            <EntityTypeMapping TypeName="fabricetasModel.tema">
+              <MappingFragment StoreEntitySet="tema">
+                <ScalarProperty Name="TEMA_ID" ColumnName="TEMA_ID" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL_TEMA" ColumnName="URL_TEMA" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="texto">
+            <EntityTypeMapping TypeName="fabricetasModel.texto">
+              <MappingFragment StoreEntitySet="texto">
+                <ScalarProperty Name="TEXTO_ID" ColumnName="TEXTO_ID" />
+                <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="user">
+            <EntityTypeMapping TypeName="fabricetasModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="IDENTIFICATION_TYPE" ColumnName="IDENTIFICATION_TYPE" />
+                <ScalarProperty Name="IDENTIFICATION_NUMBER" ColumnName="IDENTIFICATION_NUMBER" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="SSO_ID" ColumnName="SSO_ID" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="r_user_role" TypeName="fabricetasModel.r_user_role" StoreEntitySet="r_user_role">
+            <EndProperty Name="role">
+              <ScalarProperty Name="ROLE_ID" ColumnName="R_ROLE_ID" />
+            </EndProperty>
+            <EndProperty Name="user">
+              <ScalarProperty Name="USER_ID" ColumnName="R_USER_ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
