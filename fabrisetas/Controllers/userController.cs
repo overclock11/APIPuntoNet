@@ -29,6 +29,21 @@ namespace fabrisetas.Controllers
             return result;
         }
 
+        // GET: api/user/tipo/ARTISTA
+        [ActionName("lista")]
+        public string Get(string tipoUsuario)
+        {
+            string result = "";
+            string tipo = tipoUsuario.ToUpper();
+            fabrisetas = new fabricetasEntities();
+            var usuario = (from us in fabrisetas.user
+                           where us.TIPO == tipo
+                           select new { us.USER_ID, us.TIPO, us.NAME, us.IDENTIFICATION_NUMBER, us.FIRST_NAME, us.LAST_NAME });
+            result = JsonConvert.SerializeObject(usuario);
+            return result;
+        }
+
+
         // GET: api/user/unico/5
         [ActionName("unico")]
         public string Get(int id)
@@ -87,6 +102,7 @@ namespace fabrisetas.Controllers
 
             return response;
         }
+
 
         // DELETE: api/Usuarios/5
         public void Delete(int id)
