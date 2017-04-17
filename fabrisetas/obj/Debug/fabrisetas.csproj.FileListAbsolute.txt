@@ -1,0 +1,207 @@
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\csc.exe
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\System.Collections.Immutable.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\vbc.exe
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\VBCSCompiler.exe
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\roslyn\VBCSCompiler.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\fabrisetas.dll.config
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\fabrisetas.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\fabrisetas.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Antlr3.Runtime.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\EntityFramework.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\EntityFramework.SqlServer.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Google.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Web.Infrastructure.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\MySql.Data.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\MySql.Data.Entity.EF6.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Newtonsoft.Json.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Owin.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Net.Http.Formatting.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Helpers.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.Owin.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.WebHost.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Mvc.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Optimization.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Razor.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.Deployment.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.Razor.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\WebGrease.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Newtonsoft.Json.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Net.Http.Formatting.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Helpers.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.WebHost.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Mvc.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Optimization.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Razor.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.Deployment.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.WebPages.Razor.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Antlr3.Runtime.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\EntityFramework.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\EntityFramework.SqlServer.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Google.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\System.Web.Http.Owin.xml
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Net.Http.Formatting.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Helpers.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Http.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Http.WebHost.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Mvc.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Optimization.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Razor.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.WebPages.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\EntityFramework.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\bin\es\System.Web.Http.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\obj\Debug\fabrisetas.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\obj\Debug\fabrisetas.dll
+c:\users\usuario\documents\visual studio 2015\Projects\fabrisetas\fabrisetas\obj\Debug\fabrisetas.pdb
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\csc.exe
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\System.Collections.Immutable.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\System.Reflection.Metadata.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\vbc.exe
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\VBCSCompiler.exe
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\roslyn\VBCSCompiler.exe.config
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\fabrisetas.dll.config
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\fabrisetas.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\fabrisetas.pdb
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Antlr3.Runtime.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\EntityFramework.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\EntityFramework.SqlServer.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.Core.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Cookies.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Facebook.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Google.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.OAuth.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Twitter.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Web.Infrastructure.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\MySql.Data.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\MySql.Data.Entity.EF6.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Newtonsoft.Json.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Owin.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Net.Http.Formatting.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Helpers.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.Owin.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.WebHost.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Mvc.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Optimization.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Razor.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.Deployment.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.Razor.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\WebGrease.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Newtonsoft.Json.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Net.Http.Formatting.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Helpers.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.WebHost.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Mvc.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Optimization.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Razor.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.Deployment.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.WebPages.Razor.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Antlr3.Runtime.pdb
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\EntityFramework.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\EntityFramework.SqlServer.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.Core.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Facebook.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Cookies.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.OAuth.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Google.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.Twitter.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.Owin.xml
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Net.Http.Formatting.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Helpers.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Http.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Http.WebHost.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Mvc.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Optimization.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Razor.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.WebPages.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\EntityFramework.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\EntityFramework.SqlServer.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Security.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\es\System.Web.Http.Owin.resources.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\obj\Debug\fabrisetas.csprojResolveAssemblyReference.cache
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\obj\Debug\fabrisetas.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\obj\Debug\fabrisetas.pdb
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Cors.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.Cors.dll
+C:\nmp-server-2.1\nginx-1.2.5\html\api net\APIPuntoNet\fabrisetas\bin\System.Web.Http.Cors.xml
